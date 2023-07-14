@@ -24,6 +24,5 @@
   },
   "include": [
     "lib",
-    "src/index.ts"
   ]
 }

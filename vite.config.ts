@@ -5,7 +5,7 @@ export default defineConfig({
   build: {
     emptyOutDir: false,
     lib: {
-      entry: './lib/tsc-out.ts',
+      entry: './lib/main.ts',
       name: 'tsc-out',
       formats: ['es', 'cjs'],
       fileName(format) {
