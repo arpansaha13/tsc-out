@@ -1,0 +1,31 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "languageSettings": [
+    // spell check only comments and strings
+    {
+      "languageId": [
+        "javascript",
+        "typescript"
+      ],
+      "includeRegExpList": [
+        "strings",
+        "CStyleComment"
+      ]
+    }
+  ],
+  "words": [
+    "arpan",
+    "arpansaha13",
+    "esno",
+    "preinstall",
+    "saha"
+  ],
+  "ignorePaths": [
+    ".prettierrc",
+    "pnpm-lock.yaml"
+  ],
+  "useGitignore": true,
+  "caseSensitive": false,
+  "allowCompoundWords": false
+}

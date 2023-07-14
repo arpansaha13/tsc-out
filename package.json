@@ -1,0 +1,36 @@
+{
+  "name": "@arpansaha13/tsc-out",
+  "private": false,
+  "version": "0.1.0",
+  "author": "Arpan Saha <https://github.com/arpansaha13>",
+  "description": "A utility for generating a single declaration outFile from a bunch of typescript files.",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.cjs",
+    "types": "./dist/index.d.ts"
+  },
+  "sideEffects": false,
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -p tsconfig.build.json && vite build"
+  },
+  "devDependencies": {
+    "@arpansaha13/utils": "^0.4.0",
+    "@types/node": "^20.4.2",
+    "typescript": "^5.1.3",
+    "vite": "^4.3.9"
+  },
+  "dependencies": {
+    "fast-glob": "^3.3.0"
+  }
+}

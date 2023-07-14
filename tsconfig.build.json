@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "declaration": true,
+    "declarationMap": false,
+    "emitDeclarationOnly": true,
+    "moduleResolution": "Node",
+    "noEmit": false,
+    "sourceMap": false,
+    "outFile": "dist/index.d.ts",
+    "isolatedModules": false,
+    "allowSyntheticDefaultImports": true,
+  }
+}
