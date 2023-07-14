@@ -1,7 +1,7 @@
 {
   "name": "@arpansaha13/tsc-out",
   "private": false,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Arpan Saha <https://github.com/arpansaha13>",
   "description": "A utility for generating a single declaration outFile from a bunch of typescript files.",
   "type": "module",
