@@ -1,9 +1,11 @@
 {
   "name": "@arpansaha13/tsc-out",
   "private": false,
+  "packageManager": "pnpm@8.5.1",
   "version": "0.1.1",
   "author": "Arpan Saha <https://github.com/arpansaha13>",
   "description": "A utility for generating a single declaration outFile from a bunch of typescript files.",
+  "license": "MIT",
   "type": "module",
   "files": [
     "dist"
@@ -20,7 +22,15 @@
   "engines": {
     "node": ">=16.0.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arpansaha13/tsc-out"
+  },
+  "bugs": {
+    "url": "https://github.com/arpansaha13/tsc-out/issues"
+  },
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "dev": "vite",
     "build": "tsc -p tsconfig.build.json && vite build && esno scripts/postbuild.mts"
   },
@@ -33,5 +43,12 @@
   },
   "dependencies": {
     "fast-glob": "^3.3.0"
-  }
+  },
+  "keywords": [
+    "tsc",
+    "node",
+    "declaration",
+    "javascript",
+    "typescript"
+  ]
 }
