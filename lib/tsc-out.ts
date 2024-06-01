@@ -23,7 +23,7 @@ export default async function tscOut(outFile: string, options: TscOutOptions) {
   const excludeGlob = options.exclude
   const fgOptions = options.fgOptions ?? {}
 
-  // Try converting them to absolute
+  // TODO: Try converting them to absolute
   const includePaths = await fg(includeGlob, fgOptions)
   const excludePaths = excludeGlob ? await fg(excludeGlob, fgOptions) : []
 
@@ -59,8 +59,8 @@ function getTsConfig(outFile: string, include: ReadonlyArray<string>, exclude: R
   const compilerOptions: ts.CompilerOptions = {
     strict: true,
     allowJs: false,
-    target: 'ES2020' as unknown as ts.ScriptTarget.ES2020,
-    module: 'ESNext' as unknown as ts.ModuleKind.ESNext,
+    target: ts.ScriptTarget.ES2020,
+    module: ts.ModuleKind.ESNext,
     noUnusedLocals: true,
     strictNullChecks: true,
     outFile,
@@ -75,7 +75,7 @@ function getTsConfig(outFile: string, include: ReadonlyArray<string>, exclude: R
     skipLibCheck: true,
     esModuleInterop: true,
     noImplicitAny: true,
-    moduleResolution: 'node' as unknown as ts.ModuleResolutionKind.NodeJs,
+    moduleResolution: ts.ModuleResolutionKind.Bundler,
     types: ['@types/node'],
   }
 
