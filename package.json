@@ -36,10 +36,10 @@
   },
   "devDependencies": {
     "@arpansaha13/utils": "^0.6.0",
-    "@types/node": "^20.12.12",
+    "@types/node": "^20.13.0",
     "esno": "^4.7.0",
     "typescript": "^5.4.5",
-    "vite": "^4.5.3"
+    "vite": "^5.2.12"
   },
   "dependencies": {
     "fast-glob": "^3.3.2"
