@@ -59,8 +59,8 @@ function getTsConfig(outFile: string, include: ReadonlyArray<string>, exclude: R
   const compilerOptions: ts.CompilerOptions = {
     strict: true,
     allowJs: false,
-    target: ts.ScriptTarget.ES2020,
-    module: ts.ModuleKind.ESNext,
+    target: 'ES2020' as unknown as ts.ScriptTarget.ES2020,
+    module: 'ESNext' as unknown as ts.ModuleKind.ESNext,
     noUnusedLocals: true,
     strictNullChecks: true,
     outFile,
@@ -75,7 +75,7 @@ function getTsConfig(outFile: string, include: ReadonlyArray<string>, exclude: R
     skipLibCheck: true,
     esModuleInterop: true,
     noImplicitAny: true,
-    moduleResolution: ts.ModuleResolutionKind.Bundler,
+    moduleResolution: 'Bundler' as unknown as ts.ModuleResolutionKind.Bundler,
     types: ['@types/node'],
   }
 
